@@ -14,8 +14,8 @@ O livro apresenta os conceitos fundamentais de algoritmos de forma simples e vis
 
 ## ✅ Progresso
 
-- [ ] Capítulo 1 – Introdução a algoritmos
-- [ ] Capítulo 2 – Ordenação por seleção
+- [X] Capítulo 1 – Introdução a algoritmos
+- [X] Capítulo 2 – Ordenação por seleção
 - [ ] Capítulo 3 – Recursão
 - [ ] Capítulo 4 - Quicksort
 - [ ] Capítulo 5 – Tabela hash
