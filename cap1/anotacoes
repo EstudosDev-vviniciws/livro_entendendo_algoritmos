@@ -1,0 +1,90 @@
+🔍 Pesquisa Simples (Busca Linear)
+A busca simples verifica cada item da lista, um por um, até encontrar o valor desejado.
+
+É fácil de implementar, mas lenta para listas grandes.
+
+Exemplo: Procurar seu nome em uma lista desorganizada.
+
+📌 Eficiência: Se tiver 1 milhão de nomes, pode ter que olhar até 1 milhão de vezes.
+🧠 Custo: O(n) → Cresce linearmente com o tamanho da lista.
+
+
+⚡ Pesquisa Binária
+Funciona somente em listas ordenadas.
+
+Ao invés de procurar item por item, você olha direto para o meio da lista.
+
+Se o valor procurado for menor, ignora a metade maior. Se for maior, ignora a metade menor.
+
+Vai dividindo a lista pela metade a cada passo.
+
+📌 Exemplo: Procurar uma palavra em um dicionário, indo direto ao meio.
+
+🧠 Custo: O(log n) → Muito mais rápido!
+Exemplo:
+
+Lista com 128 itens → no máximo 7 passos.
+
+Lista com 1.000.000 → no máximo 20 passos!
+
+
+📏 Notação Big O (O-grande)
+A Notação Big O serve para medir o tempo de execução de algoritmos, especialmente em listas grandes.
+
+Algoritmo | Notação Big O | Significado
+Pesquisa Simples | O(n) | Cresce linearmente com o tamanho da lista
+Pesquisa Binária | O(log n) | Cresce muito mais devagar
+
+⚠️ O Big O não mostra o tempo exato, mas como o tempo aumenta conforme a entrada cresce.
+
+
+🧭 O Problema do Caixeiro Viajante (TSP – Travelling Salesman Problem)
+Imagine que um vendedor precisa visitar várias cidades uma única vez e depois voltar para a cidade de origem.
+
+O objetivo é encontrar a rota mais curta possível que passe por todas as cidades sem repetir.
+
+📌 É um problema de otimização.
+
+🧠 Por que é difícil?
+À primeira vista, parece simples, mas:
+
+Se houver apenas 4 cidades, existem 6 caminhos possíveis.
+
+Com 10 cidades, são 362.880 combinações.
+
+Com 20 cidades, passa de 2 trilhões de caminhos possíveis! 😱
+
+🕒 Complexidade: O(n!)
+Esse problema cresce de forma fatorial: n! (fatorial de n).
+
+Isso significa que o tempo de execução explode rapidamente conforme aumentamos o número de cidades.
+
+📈 Notação Big O: O(n!) – uma das mais lentas possíveis.
+
+🔍 Soluções
+Força bruta: Testar todas as rotas possíveis (muito lento).
+
+Algoritmos aproximados (heurísticas):
+
+Não garantem a rota perfeita, mas chegam perto e mais rápido.
+
+Exemplos: Algoritmo do Vizinho Mais Próximo, Algoritmos Genéticos, Algoritmo de Colônia de Formigas, etc.
+
+🎯 Onde é usado?
+Entregas e logística (ex: rotas de caminhões).
+
+Planejamento de circuitos (ex: chips de computador).
+
+Roteamento de GPS.
+
+Robótica e drones.
+
+
+✅ Conclusão:
+Sempre que possível, prefira algoritmos mais rápidos (menor Big O).
+
+A notação Big O ajuda a comparar algoritmos em termos de eficiência, principalmente com grandes volumes de dados.
+
+O Problema do Caixeiro Viajante mostra que nem todos os problemas têm soluções rápidas — às vezes, precisamos aceitar soluções aproximadas, pois encontrar a solução perfeita levaria tempo demais.
+
+Ele nos lembra que a escolha do algoritmo certo pode significar a diferença entre uma solução viável e uma que nunca termina.
