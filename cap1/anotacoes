@@ -83,6 +83,8 @@ Robótica e drones.
 ✅ Conclusão:
 Sempre que possível, prefira algoritmos mais rápidos (menor Big O).
 
+A pesquisa binária é muito eficiente, mas exige que a lista esteja ordenada.
+
 A notação Big O ajuda a comparar algoritmos em termos de eficiência, principalmente com grandes volumes de dados.
 
 O Problema do Caixeiro Viajante mostra que nem todos os problemas têm soluções rápidas — às vezes, precisamos aceitar soluções aproximadas, pois encontrar a solução perfeita levaria tempo demais.
