@@ -31,6 +31,17 @@ A pilha de chamadas do Python funciona assim.
 📌 A pilha pode ser implementada com uma (lista encadeada), já que ela só insere e remove do topo.
 
 
+🧠 Pilha de Chamada com Recursão
+A cada chamada recursiva:
+
+- Um novo estado da função é colocado na pilha.
+- Isso inclui as variáveis locais e o ponto onde a função deve continuar após retornar.
+- Ao retornar, o Python "desempilha" e continua de onde parou.
+
+Isso torna a recursão simples e elegante, mas:
+⚠️ Pode causar estouro de pilha (stack overflow) se não tiver um caso base ou se for muito profunda.
+
+
 ✅ Conclusão:
 
 - Recursão é poderosa e elegante para problemas que podem ser quebrados em partes menores.
