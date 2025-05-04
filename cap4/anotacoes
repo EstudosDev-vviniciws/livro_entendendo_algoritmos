@@ -1,0 +1,67 @@
+⚡ Quicksort
+Um dos algoritmos mais famosos que usa DC.
+
+Como funciona:
+1. Escolhe-se um pivô da lista.
+
+2. Separa a lista em:
+- Elementos menores que o pivô.
+- Elementos maiores que o pivô.
+
+3. Aplica o quicksort recursivamente em cada metade.
+
+4. Junta os resultados.
+
+
+🧩 O que é "Dividir para Conquistar"?
+Dividir para conquistar (Divide and Conquer – DC) é uma técnica onde:
+
+1. O problema é dividido em subproblemas menores e semelhantes.
+2. Resolve-se recursivamente os subproblemas.
+3. Junta-se as soluções para formar a resposta final.
+
+
+🔁 Algoritmo de Euclides:
+Resolve o problema de encontrar o MDC (máximo divisor comum) entre dois números.
+Além disso, esse algoritmo também usa o princípio de dividir para conquistar!
+
+
+🧠 Uma espiada na Programação Funcional:
+
+- Programação funcional se encaixa bem com algoritmos recursivos e divide para conquistar.
+- Funções puras: Não têm efeitos colaterais.
+- Imutabilidade: Evita modificar variáveis.
+
+
+📚 Provas por Indução:
+Muito usadas para provar se algoritmos recursivos funcionam.
+
+1. Caso-base:
+Prova-se que o algoritmo funciona para um caso simples (ex: lista vazia ou de 1 elemento).
+
+2. Caso indutivo:
+Assume-se que funciona para um problema menor e mostra que também funciona para um maior.
+
+
+⚔️ Merge Sort vs Quicksort:
+
+| Algoritmo  | Tempo médio | Pior caso  | Estável? | Observações                       |
+| ---------- | ----------- | ---------- | -------- | --------------------------------- |
+| Quicksort  | O(n log n)  | O(n²)      | Não      | Mais rápido na prática            |
+| Merge Sort | O(n log n)  | O(n log n) | Sim      | Gasta mais memória, mas é estável |
+
+
+🎯 Caso Médio vs Pior Caso:
+
+- Caso médio: Situação comum; por exemplo, quicksort geralmente roda em O(n log n).
+- Pior caso: Quando a performance é a pior possível; ex: lista já ordenada → O(n²) no quicksort.
+- Usamos a notação Big O para descrever o pior caso, por segurança.
+
+
+✅ Conclusão:
+
+- A técnica "dividir para conquistar" é poderosa e eficiente, usada em algoritmos famosos.
+- O quicksort é um exemplo prático e rápido, mas tem um pior caso ruim.
+- O algoritmo de Euclides também divide problemas até que fiquem triviais.
+- Recursão, provas por indução e programação funcional andam juntos nessa abordagem.
+- Compreender o caso médio e o pior caso ajuda a escolher o melhor algoritmo na prática.
