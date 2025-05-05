@@ -1,0 +1,58 @@
+📦 O que é uma Tabela Hash?
+Uma tabela hash (ou dicionário, em Python) é uma estrutura de dados que mapeia
+chaves para valores, permitindo buscas, inserções e deleções muito rápidas — geralmente
+em tempo constante O(1).
+
+
+🧮 Funções Hash:
+A função hash transforma uma chave (como uma string) em um índice de um array.
+
+- Boa função hash → distribui uniformemente as chaves.
+- Evita colisões (duas chaves diferentes caindo no mesmo índice).
+
+
+🔍 Usando Tabelas Hash para Pesquisas:
+Tabelas hash permitem pesquisar um valor associado a uma chave de forma muito rápida.
+
+preco = {}
+preco["banana"] = 1.2
+
+print(preco["banana"])  
+
+Busca por chave é extremamente eficiente.
+
+
+🚫 Evitando Entradas Duplicadas:
+Uma aplicação comum das tabelas hash é verificar duplicatas rapidamente.
+
+votaram = dict() ou votaram = {}
+
+votaram = {}
+
+def verifica_voto(nome):
+    if votaram.get(nome):
+        print("Chame a polícia!")
+    else:
+        votaram[nome] = True
+        print("Deixe votar")
+
+- O método get() retorna None se a chave não existir.
+- Muito útil em sistemas que precisam garantir unicidade (ex: login, votos, cadastros).
+
+
+🧠 Por que usar Tabelas Hash?
+
+| Operação | Complexidade Média |
+| -------- | ------------------ |
+| Inserção | O(1)               |
+| Busca    | O(1)               |
+| Deleção  | O(1)               |
+
+Obs: Em casos raros de colisões, o tempo pode crescer, mas boas funções hash minimizam isso.
+
+
+✅ Conclusão:
+
+- Tabelas hash são ferramentas poderosas para armazenar e buscar dados com eficiência.
+- Usadas em autenticação, contagem de frequência, detecção de duplicatas e muito mais.
+- A chave para eficiência é usar uma boa função hash e evitar colisões.
