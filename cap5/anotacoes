@@ -51,6 +51,45 @@ def verifica_voto(nome):
 Obs: Em casos raros de colisões, o tempo pode crescer, mas boas funções hash minimizam isso.
 
 
+💾 Usando Tabelas Hash como Cache
+Você pode armazenar resultados de cálculos caros para evitar fazer novamente.
+
+📌 Exemplo:
+
+cache = {}
+
+def pega_ágina(url):
+  if cache.get(url):
+    return cache[url] -> Retorna os dados do cache
+  else:
+    dados = pega_dados_do_servidor(url)
+    cache[url] = dados -> Salva esses dados primeiro no seu cache
+    return dados
+
+
+⚠️ Colisões
+Colisão = duas chaves diferentes sendo convertidas para o mesmo índice.
+
+🛠 Soluções comuns:
+- Encadeamento: guardar uma lista de itens naquele índice.
+- Endereçamento aberto: procurar outro índice livre.
+
+
+⚙️ Desempenho e Fator de Carga
+📌 Fator de carga = número de itens armazenados / tamanho total da tabela.
+
+- Se o fator de carga for muito alto → muitas colisões.
+- Ideal: manter abaixo de 0.7 e redimensionar a tabela quando necessário.
+
+
+✅ Características de uma Boa Função Hash
+Uma boa função hash:
+
+- É rápida de calcular.
+- Gera distribuições equilibradas (espalha bem os dados).
+- Minimiza colisões.
+
+
 ✅ Conclusão:
 
 - Tabelas hash são ferramentas poderosas para armazenar e buscar dados com eficiência.
