@@ -3,7 +3,6 @@ Caso-base e o Caso recursivo:
 Objetivo: Crie uma função recursiva fatorial(n) que calcule o fatorial de n.
 '''
 
-
 def fatorial(n):
     if n == 1:
         return 1
