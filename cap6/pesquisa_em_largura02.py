@@ -4,8 +4,9 @@ Objetivo: Modifique o algoritmo de BFS para retornar
 o caminho completo (lista de nós) entre origem e destino.
 '''
 
+from collections import deque
+
 def caminho_mais_curto(grafo, origim, destino):
-    from collections import deque
     
     fila = deque()
     fila.append([origim])
