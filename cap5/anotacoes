@@ -6,7 +6,6 @@ em tempo constante O(1).
 
 🧮 Funções Hash:
 A função hash transforma uma chave (como uma string) em um índice de um array.
-
 - Boa função hash → distribui uniformemente as chaves.
 - Evita colisões (duas chaves diferentes caindo no mesmo índice).
 
@@ -77,21 +76,18 @@ Colisão = duas chaves diferentes sendo convertidas para o mesmo índice.
 
 ⚙️ Desempenho e Fator de Carga
 📌 Fator de carga = número de itens armazenados / tamanho total da tabela.
-
 - Se o fator de carga for muito alto → muitas colisões.
 - Ideal: manter abaixo de 0.7 e redimensionar a tabela quando necessário.
 
 
 ✅ Características de uma Boa Função Hash
 Uma boa função hash:
-
 - É rápida de calcular.
 - Gera distribuições equilibradas (espalha bem os dados).
 - Minimiza colisões.
 
 
 ✅ Conclusão:
-
 - Tabelas hash são ferramentas poderosas para armazenar e buscar dados com eficiência.
 - Usadas em autenticação, contagem de frequência, detecção de duplicatas e muito mais.
 - A chave para eficiência é usar uma boa função hash e evitar colisões.
