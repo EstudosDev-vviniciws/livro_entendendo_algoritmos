@@ -19,7 +19,7 @@ O livro apresenta os conceitos fundamentais de algoritmos de forma simples e vis
 - [X] Capítulo 3 – Recursão
 - [X] Capítulo 4 - Quicksort
 - [X] Capítulo 5 – Tabela hash
-- [ ] Capítulo 6 – Pesquisas em largura
+- [X] Capítulo 6 – Pesquisas em largura
 - [ ] Capítulo 7 – Algoritmo de Dijkstra
 - [ ] Capítulo 8 - Algoritmos gulosos
 - [ ] Capítulo 9 – Programação dinâmica
