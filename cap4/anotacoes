@@ -27,7 +27,6 @@ Além disso, esse algoritmo também usa o princípio de dividir para conquistar!
 
 
 🧠 Uma espiada na Programação Funcional:
-
 - Programação funcional se encaixa bem com algoritmos recursivos e divide para conquistar.
 - Funções puras: Não têm efeitos colaterais.
 - Imutabilidade: Evita modificar variáveis.
@@ -52,14 +51,12 @@ Assume-se que funciona para um problema menor e mostra que também funciona para
 
 
 🎯 Caso Médio vs Pior Caso:
-
 - Caso médio: Situação comum; por exemplo, quicksort geralmente roda em O(n log n).
 - Pior caso: Quando a performance é a pior possível; ex: lista já ordenada → O(n²) no quicksort.
 - Usamos a notação Big O para descrever o pior caso, por segurança.
 
 
 ✅ Conclusão:
-
 - A técnica "dividir para conquistar" é poderosa e eficiente, usada em algoritmos famosos.
 - O quicksort é um exemplo prático e rápido, mas tem um pior caso ruim.
 - O algoritmo de Euclides também divide problemas até que fiquem triviais.
