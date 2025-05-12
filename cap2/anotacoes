@@ -4,36 +4,29 @@ O que são:
 Uma estrutura simples que guarda os dados em posições (índices) fixas na memória.
 
 ✅ Vantagens:
-
 - Acesso rápido a qualquer item usando o índice.
 📌 Exemplo: meu_array[3] é instantâneo.
 
 ❌ Desvantagens:
-
 - Inserir ou remover um item no meio exige mover todos os outros elementos.
 - Tamanho fixo (em algumas linguagens).
 
 🧠 Tempo de execução:
-
 - Leitura: O(1) (tempo constante)
 - Inserção/Remoção (no meio): O(n) (tempo linear)
 
 
 🔗 Listas Encadeadas
 O que são:
-
 Cada elemento (nó) aponta para o próximo, como uma corrente.
 
 ✅ Vantagens:
-
 - Fácil adicionar ou remover itens no início ou no meio, sem mover outros.
 
 ❌ Desvantagens:
-
 - Acesso é sequencial: para acessar o item 5, precisa passar pelos 4 primeiros.
 
 🧠 Tempo de execução:
-
 - Leitura: O(n) (tempo linear)
 - Inserção/Remoção (no início ou meio): O(1) (tempo constante)
 
@@ -50,14 +43,12 @@ Remoção	                 O(n)	         O(1)
 
 
 ❌ Deleções
-
 - Array: precisa mover os elementos seguintes → O(n)
 - Lista encadeada: apenas atualiza o ponteiro → O(1)
 
 
 🧮 Ordenação por Seleção (Selection Sort)
 Como funciona:
-
 - Procura o menor item da lista.
 - Move esse item para o início.
 - Repete isso até a lista estar ordenada.
@@ -65,13 +56,11 @@ Como funciona:
 📌 Exemplo: [5, 3, 6, 2, 10] → [2, 3, 5, 6, 10]
 
 🧠 Complexidade:
-
 - Sempre leva O(n²) tempo, mesmo com listas pequenas.
 - Funciona, mas não é ideal para listas grandes.
 
 
 ✅ Conclusão do Capítulo:
-
 - Arrays são ótimos para leitura rápida, mas lentos para inserções/remoções.
 - Listas encadeadas são boas para inserções rápidas, mas lentas para leitura.
 - Conhecer essas diferenças ajuda a escolher a estrutura certa para cada problema.
