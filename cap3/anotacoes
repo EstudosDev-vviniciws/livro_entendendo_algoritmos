@@ -1,6 +1,5 @@
 🔁 O que é Recursão?
 Recursão é quando uma função chama a si mesma para resolver um problema menor do mesmo tipo.
-
 - Parece mágica no começo, mas segue uma lógica clara:
 - Caso-base: onde a função para de se chamar.
 - Caso recursivo: onde a função continua se chamando.
@@ -13,7 +12,6 @@ Sem o caso-base, a função chamaria a si mesma para sempre → isso causa um es
 
 🧩 Como funciona a pilha de chamadas
 Toda vez que uma função é chamada, o Python guarda:
-
 - Os valores dos parâmetros.
 - Onde a execução deve continuar depois.
 
@@ -23,7 +21,6 @@ Quando a função termina, ela é removida do topo da pilha, e o programa contin
 
 🧱 Pilha (Stack)
 É como uma pilha de pratos:
-
 - Você coloca um novo no topo → função chamada
 - Você tira o do topo → função terminou
 
@@ -33,7 +30,6 @@ A pilha de chamadas do Python funciona assim.
 
 🧠 Pilha de Chamada com Recursão
 A cada chamada recursiva:
-
 - Um novo estado da função é colocado na pilha.
 - Isso inclui as variáveis locais e o ponto onde a função deve continuar após retornar.
 - Ao retornar, o Python "desempilha" e continua de onde parou.
@@ -43,7 +39,6 @@ Isso torna a recursão simples e elegante, mas:
 
 
 ✅ Conclusão:
-
 - Recursão é poderosa e elegante para problemas que podem ser quebrados em partes menores.
 - Todo algoritmo recursivo precisa de:
 - Um caso-base
