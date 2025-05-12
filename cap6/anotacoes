@@ -1,0 +1,103 @@
+🧭 O que é um Grafo?
+- Um grafo é uma estrutura de dados que representa relações entre elementos.
+- Ele é composto por nós (vértices) e arestas (ligações entre nós).
+- Pode ser usado para modelar mapas, redes sociais, rotas, dependências e muito mais.
+
+
+🔍 O que é Pesquisa em Largura (BFS)?
+- É um algoritmo que encontra o caminho mais curto (menor número de etapas) entre dois pontos em um grafo não ponderado (sem pesos).
+- Utiliza uma fila (queue) para explorar os nós por camadas (níveis).
+- Ideal para: verificar conexões, encontrar o menor número de saltos, como "quem está mais perto de mim".
+
+
+📌 Filas (Queues) e Pilhas (Stacks) com deque
+O Python fornece a estrutura deque da biblioteca collections, que pode ser usada tanto para filas (FIFO) quanto para pilhas (LIFO).
+
+✅ Fila (FIFO – First In, First Out):
+- O primeiro elemento a entrar é o primeiro a sair.
+- Usado em algoritmos de busca em largura (BFS).
+
+from collections import deque
+
+fila = deque()
+fila.append("João")   # entra
+fila.append("Maria")  # entra
+print(fila.popleft())  # sai: João
+
+✅ Pilha (LIFO – Last In, First Out):
+- O último elemento a entrar é o primeiro a sair.
+- Usado em outros algoritmos como busca em profundidade (DFS).
+
+pilha = deque()
+pilha.append("João")   # entra
+pilha.append("Maria")  # entra
+print(pilha.pop())     # sai: Maria
+
+📌 Resumo:
+- append() → adiciona no final.
+- popleft() → remove do início (FIFO – fila).
+- pop() → remove do final (LIFO – pilha).
+
+
+🛠 Implementando um Grafo em Python: 
+- Usamos dicionários para representar os nós e suas conexões.
+
+grafo = {
+    "voce": ["alice", "bob", "claire"],
+    "bob": ["anuj", "peggy"],
+    "alice": ["peggy"],
+    "claire": ["thom", "jonny"],
+    "anuj": [],
+    "peggy": [],
+    "thom": [],
+    "jonny": []
+}
+
+
+🧠 Implementando o Algoritmo de BFS:
+
+from collections import deque
+
+def pessoa_e_vendedora(nome):
+    return nome[-1] == "m"  # Exemplo: nome termina com "m"
+
+def busca(nome):
+    fila = deque()
+    fila += grafo[nome]
+    verificadas = []
+
+    while fila:
+        pessoa = fila.popleft()
+        if pessoa not in verificadas:
+            if pessoa_e_vendedora(pessoa):
+                print(f"{pessoa} é um vendedor de manga!")
+                return True
+            else:
+                fila += grafo[pessoa]
+                verificadas.append(pessoa)
+    return False
+
+
+📏 Encontrando o Caminho Mínimo:
+- A BFS encontra o menor número de conexões entre dois pontos.
+- Exemplo: encontrar o amigo mais próximo que é vendedor de manga.
+- Não funciona bem com grafos ponderados (com pesos nos caminhos) — para isso usamos Dijkstra (Cap. 7).
+
+
+⏱ Tempo de Execução
+
+Para grafos com:
+- n nós
+- e arestas
+
+A complexidade é: O(n + e)
+Isso significa que o tempo de execução depende do número total de nós e conexões.
+
+
+✅ Conclusão:
+- Grafos representam conexões entre elementos (nós e arestas).
+- A busca em largura (BFS) encontra o caminho mais curto em grafos não ponderados.
+- Filas (FIFO) são fundamentais para o funcionamento do algoritmo.
+- A estrutura deque facilita a manipulação da fila de forma eficiente.
+- A implementação em Python é simples usando dicionários para o grafo e deque para a fila.
+- Muito útil para problemas como redes sociais, mapas, sistemas de recomendação e buscas em grafos.
