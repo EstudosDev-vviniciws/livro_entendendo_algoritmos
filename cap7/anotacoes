@@ -1,0 +1,21 @@
+🧭 O que é o Algoritmo de Dijkstra?
+O algoritmo de Dijkstra encontra o caminho de menor custo entre dois nós
+em um grafo ponderado (com pesos).Diferente do BFS, que só serve para grafos
+não ponderados, Dijkstra leva em conta os custos dos caminhos.
+
+
+📌 Terminologia Importante: 
+- Grafo ponderado: cada aresta tem um valor/custo.
+- Custo: o valor total para chegar a um determinado nó.
+- Pais (ou predecessores): quem nos levou até esse nó (usado para reconstruir o caminho).
+- Nó processado: já verificamos todos os vizinhos dele com os menores custos possíveis.
+
+
+🛠 Etapas do Algoritmo de Dijkstra:
+1. Encontre o nó de menor custo ainda não processado.
+2. Para cada vizinho desse nó:
+- Calcule o custo total para chegar até ele.
+- Se for menor que o custo atual registrado, atualize.
+3. Marque o nó como processado.
+4. Repita até que todos os nós tenham sido processados.
+
