@@ -20,6 +20,16 @@ não ponderados, Dijkstra leva em conta os custos dos caminhos.
 4. Repita até que todos os nós tenham sido processados.
 
 
+🧪 Exemplo de Grafo Ponderado:
+
+grafo = {
+    'inicio': {'a': 6, 'b': 2},
+    'a': {'fim': 1},
+    'b': {'a': 3, 'fim': 5},
+    'fim': {}
+}
+
+
 🎹 Adquirindo um Piano – Um Exemplo Prático
 Esse exemplo serve para mostrar a aplicação real de Dijkstra: encontrar o
 caminho de menor custo entre dois pontos, onde os caminhos possuem diferentes
@@ -52,33 +62,33 @@ Para grafos com pesos negativos, use o algoritmo de Bellman-Ford
 (visto em capítulos mais avançados).
 
 
-🧪 Implementação Comentada (com Dicionários):
+💻 Implementação Simplificada:
 
 '''
 Objetivo: Encontrar o caminho de menor custo do ponto
 "início" até o ponto "fim" em um grafo ponderado.
 '''
 
+from typing import Dict
+
 grafo = {
-    'inicio': {'a': 5, 'b': 2},
-    'a': {'c': 4, 'd': 2},
-    'b': {'a': 8, 'd': 7},
-    'c': {'fim': 3, 'd': 6},
-    'd': {'fim': 1},
+    'inicio': {'a': 6, 'b': 2},
+    'a': {'fim': 1},
+    'b': {'a': 3, 'fim': 5},
     'fim': {}
 }
 
 infinito = float('inf')
-custos = {'a': 5, 'b': 2, 'c': infinito, 'd': infinito, 'fim': infinito}
-pais = {'a': 'inicio', 'b': 'inicio', 'c': None, 'd': None, 'fim': None}
+custos = {'a': 6, 'b': 2, 'fim': infinito}
+pais = {'a': 'inicio', 'b': 'inicio', 'fim': None}
 processados = []
 
 def ache_menor_custo(custos):
-    menor_custo = float('inf')
+    menor = float('inf')
     menor_no = None
     for no in custos:
-        if custos[no] < menor_custo and no not in processados:
-            menor_custo = custos[no]
+        if custos[no] < menor and no not in processados:
+            menor = custos[no]
             menor_no = no
     return menor_no
 
@@ -86,16 +96,29 @@ no = ache_menor_custo(custos)
 while no:
     custo = custos[no]
     vizinhos = grafo[no]
-    for vizinho in vizinhos:
-        novo_custo = custo + vizinhos[vizinho]
-        if novo_custo < custos[vizinho]:
-            custos[vizinho] = novo_custo
-            pais[vizinho] = no
+    for n in vizinhos:
+        novo_custo = custo + vizinhos[n]
+        if custos[n] > novo_custo:
+            custos[n] = novo_custo
+            pais[n] = no
     processados.append(no)
     no = ache_menor_custo(custos)
 
 print("Custos finais:", custos)
 print("Pais:", pais)
+
+
+🔁 Diferença entre BFS e Dijkstra:
+
+| Algoritmo | Tipo de Grafo                 | Considera pesos? | Objetivo principal         |
+| --------- | ----------------------------- | ---------------- | -------------------------- |
+| BFS       | Não ponderado                 | ❌                | Menor número de passos     |
+| Dijkstra  | Ponderado (sem peso negativo) | ✅                | Caminho de menor **custo** |
+
+
+⛔ Limitações:
+- Não funciona com arestas de peso negativo (usar Bellman-Ford).
+- Precisa armazenar todos os nós e seus custos (pode consumir muita memória em grafos grandes).
 
 
 ✅ Conclusão:
