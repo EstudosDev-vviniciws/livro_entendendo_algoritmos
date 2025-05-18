@@ -1,0 +1,57 @@
+🧠 O que são Algoritmos Gulosos?
+São algoritmos que fazem a melhor escolha possível a cada etapa,
+sem se preocupar com o resultado final global.
+
+- Escolhem localmente o que parece melhor.
+- Nem sempre fornecem a solução perfeita, mas costumam gerar boas aproximações.
+- Muito utilizados em problemas difíceis de resolver exatamente (ex: NP-completos).
+
+
+🏫 Problema de Cronograma da Sala de Aula:
+Objetivo: Agendar o maior número possível de aulas, sem que seus horários
+se sobreponham.
+🟢 Estratégia gulosa: Sempre escolher a aula que termina mais cedo.
+
+📌 Exemplo:
+
+| Aula | Início | Fim |
+| ---- | ------ | --- |
+| A    | 9h     | 10h |
+| B    | 9h30   | 11h |
+| C    | 10h    | 11h |
+
+
+🎒 Problema da Mochila (Knapsack):
+Objetivo: Colocar os itens com o maior valor total possível dentro da mochila,
+respeitando o limite de peso.
+🟢 Estratégia gulosa: Ordenar os itens por valor por quilo e pegar os melhores
+até encher a mochila.
+
+📌 Exemplo:
+
+| Item     | Valor | Peso | Valor por kg |
+| -------- | ----- | ---- | ------------ |
+| Notebook | 3000  | 4kg  | 750          |
+| Livro    | 1500  | 3kg  | 500          |
+| Violão   | 2000  | 2kg  | 1000         |
+
+- Ordem gulosa: Violão → Notebook → Livro (até atingir o peso máximo).
+
+
+🌍 Problema da Cobertura de Conjuntos (Set Cover):
+Objetivo: Escolher o menor número possível de estações de rádio para cobrir
+todos os estados.
+🟢 Estratégia gulosa: Sempre escolher a estação que cobre o maior número de
+estados ainda não cobertos.
+
+📌 Exemplo:
+
+estacoes = {
+    'kone': {'id', 'nv', 'ut'},
+    'ktwo': {'wa', 'id', 'mt'},
+    'kthree': {'or', 'nv', 'ca'},
+    'kfour': {'nv', 'ut'},
+    'kfive': {'ca', 'az'}
+}
+
+estados_necessarios = {'mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az'}
