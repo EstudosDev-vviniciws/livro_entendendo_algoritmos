@@ -81,9 +81,40 @@ solução suficientemente boa, em tempo viável.
 ser inviável.
 
 
-📚 Conjuntos e Python
+📚 Conjuntos e Python:
 Python oferece suporte nativo a conjuntos com a estrutura set():
 - União: A | B
 - Interseção: A & B
 - Diferença: A - B
 
+
+❓ Problemas NP-completos:
+São problemas muito difíceis: não há algoritmo conhecido que os
+resolva rapidamente para todos os casos.
+
+Características:
+- Problemas de otimização (ex: mínimo de elementos).
+- Muitos deles têm milhões de possíveis combinações.
+- Resolver um pode ajudar a resolver os outros.
+
+
+🔁 Mesma Rota ou Rota Diferente?
+Exemplo de problema NP-completo:
+- Dado um conjunto de cidades e distâncias entre elas, qual a rota
+mais curta que visita todas uma vez e retorna ao ponto inicial?
+- Esse é o famoso Problema do Caixeiro Viajante (TSP).
+
+🧠 O número de combinações possíveis cresce de forma explosiva com o número de cidades.
+
+
+🧪 Como saber se um problema é NP-completo?
+1. Precisa de verificação rápida da solução? (ex: em tempo polinomial)
+2. Parece com outro problema NP-completo?
+3. A quantidade de combinações cresce exponencialmente?
+
+Se sim, provavelmente é NP-completo.
+
+📌 Exemplos clássicos:
+- Problema do caixeiro viajante.
+- Cobertura de conjuntos.
+- Particionamento de subconjuntos.
