@@ -55,3 +55,35 @@ estacoes = {
 }
 
 estados_necessarios = {'mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az'}
+
+📌 Código de solução:
+
+estacoes_finais = set()
+
+while estados_necessarios:
+    melhor_estacao = None
+    estados_cobertos = set()
+    for estacao, estados in estacoes.items():
+        cobertos = estados & estados_necessarios
+        if len(cobertos) > len(estados_cobertos):
+            melhor_estacao = estacao
+            estados_cobertos = cobertos
+    estados_necessarios -= estados_cobertos
+    estacoes_finais.add(melhor_estacao)
+
+print("Estações escolhidas:", estacoes_finais)
+
+
+📈 Algoritmos de Aproximação:
+- São algoritmos que não garantem a solução perfeita, mas produzem uma
+solução suficientemente boa, em tempo viável.
+- Úteis para problemas NP-completos, onde encontrar a melhor solução pode
+ser inviável.
+
+
+📚 Conjuntos e Python
+Python oferece suporte nativo a conjuntos com a estrutura set():
+- União: A | B
+- Interseção: A & B
+- Diferença: A - B
+
