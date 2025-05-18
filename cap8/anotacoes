@@ -118,3 +118,11 @@ Se sim, provavelmente é NP-completo.
 - Problema do caixeiro viajante.
 - Cobertura de conjuntos.
 - Particionamento de subconjuntos.
+
+
+✅ Conclusão:
+- Algoritmos gulosos fazem escolhas locais ótimas.
+- Não servem para todos os problemas, mas funcionam bem em muitos.
+- São frequentemente usados como algoritmos de aproximação.
+- Problemas NP-completos exigem soluções práticas, e os gulosos são uma boa ferramenta.
+- Saber modelar o problema corretamente é fundamental.
