@@ -1,5 +1,5 @@
 '''
-Algoritmos Gulosos:
+Algoritmos Gulosos - 3. Problema da Cobertura de Conjuntos:
 Objetivo: Escolha o menor número de estações
 que cubram todos os estados necessários.
 '''
