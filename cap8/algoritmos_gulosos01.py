@@ -1,5 +1,5 @@
 '''
-Algoritmos Gulosos:
+Algoritmos Gulosos - 1. Problema de Cronograma da Sala de Aula:
 Objetivo: Dado um conjunto de aulas com horários de início e
 fim, selecione o maior número de aulas que não se sobrepõem.
 '''
