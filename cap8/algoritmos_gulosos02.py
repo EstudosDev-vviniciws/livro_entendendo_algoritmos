@@ -1,5 +1,5 @@
 '''
-Algoritmos Gulosos:
+Algoritmos Gulosos - 2. Problema da Mochila Fracionária:
 Objetivo: Você tem uma mochila com capacidade de 5kg.
 Escolha os itens de maior valor por quilo.
 '''
