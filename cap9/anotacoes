@@ -107,3 +107,77 @@ Problema clássico de programação dinâmica:
 - As colunas, da segunda string
 - Cada célula contém o tamanho da substring comum terminando naquele ponto
 📌 É diferente de subsequência comum (que permite pular caracteres).
+
+
+✅ Criando a Tabela
+Cria-se uma matriz bidimensional, onde:
+- Linhas representam os caracteres da primeira string
+- Colunas representam os caracteres da segunda string
+Cada célula indica o comprimento da substring comum mais longa até aquele ponto.
+
+
+🧩 Preenchendo a Tabela:
+Para cada par de caracteres (um de cada string):
+- Se forem iguais, adiciona-se 1 ao valor da diagonal superior esquerda.
+- Caso contrário, a célula recebe 0.
+📌 Substrings precisam ser contínuas, por isso o uso da diagonal (mantém a sequência).
+
+
+🏁 A Solução:
+- Percorre-se a tabela para encontrar o maior valor.
+- Esse valor representa o tamanho da maior substring comum.
+- Pode-se rastrear os índices para extrair a substring final.
+
+
+🔡 Maior Subsequência Comum:
+🧠 Diferença:
+Subsequência permite pular caracteres, mantendo a ordem.
+Exemplo:
+- String 1: fosh
+- String 2: fort
+- Maior subsequência comum: fo
+
+
+🧮 Solução:
+Também utiliza uma tabela bidimensional:
+- Linhas: caracteres da string 1
+- Colunas: caracteres da string 2
+
+🔧 Preenchimento:
+Se os caracteres coincidirem:
+➝ célula recebe 1 + diagonal superior esquerda
+
+Se forem diferentes:
+➝ célula recebe o máximo entre a célula da esquerda e de cima
+
+
+📦 Extração da Resposta:
+- A célula no canto inferior direito da tabela mostra o tamanho da maior subsequência comum.
+- Pode-se retroceder pela tabela para reconstruir a subsequência.
+
+
+📝 Exemplo Visual (simplificado)
+Para fosh e fort:
+
+|   | f | o | r | t |
+| - | - | - | - | - |
+| f | 1 | 1 | 1 | 1 |
+| o | 1 | 2 | 2 | 2 |
+| s | 1 | 2 | 2 | 2 |
+| h | 1 | 2 | 2 | 2 |
+
+➡️ Resultado: fo (comprimento 2)
+
+
+✅ Conclusão:
+- Programação dinâmica é ideal para resolver problemas complexos de forma eficiente, dividindo-os
+em subproblemas e armazenando os resultados intermediários.
+- Permite transformar soluções de tempo exponencial (força bruta) em soluções de tempo polinomial.
+- É amplamente usada em problemas de otimização, como o problema da mochila, planejamento de itinerários
+e análise de strings.
+A técnica exige:
+- Entender como dividir o problema.
+- Definir uma tabela (ou matriz) para guardar os resultados.
+- Determinar relações de dependência entre as células (como diagonal, cima ou esquerda).
+- Funciona bem para problemas em que as decisões se acumulam, e cada decisão depende das anteriores.
+- Saber identificar quando aplicar programação dinâmica é uma habilidade essencial em algoritmos.
