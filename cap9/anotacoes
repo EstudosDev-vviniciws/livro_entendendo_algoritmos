@@ -68,3 +68,42 @@ Não, nesse tipo de problema (chamado 0-1 knapsack problem), você não pode div
 Ou você leva o item inteiro, ou não leva.
 Obs: Existe uma variação chamada "knapsack fracionário", onde frações são permitidas — mas
 esse é resolvido com algoritmos gulosos, não programação dinâmica.
+
+
+✈️ Otimizando o Seu Itinerário de Viagem:
+Esse exemplo mostra como usar programação dinâmica para planejar a melhor combinação de paradas
+em uma viagem, levando em consideração limites de tempo ou orçamento.
+📌 Analogia com o problema da mochila:
+- Tempo disponível → capacidade da mochila
+- Atrações com duração e prazer → itens com peso e valor
+A ideia é maximizar o "prazer total" da viagem sem ultrapassar o tempo (ou o orçamento).
+
+
+🔗 Lidando com Itens com Interdependência:
+Nem sempre os itens são independentes. Às vezes:
+- Um item só pode ser levado se outro também for levado.
+- Ou um item impede o uso de outro.
+Nesses casos, é necessário adaptar a lógica da tabela para respeitar as restrições entre os itens,
+mantendo o princípio da programação dinâmica.
+
+
+❓ É possível que a solução requeira mais de dois subproblemas?
+Sim! Alguns problemas dinâmicos exigem combinar os resultados de mais de dois subproblemas.
+➡️ Exemplo: Análise de DNA ou edição de strings, onde o valor da célula depende de até três
+outras células (diagonal, cima, esquerda).
+
+
+🪫 É possível que a melhor solução não utilize a capacidade total da mochila?
+Sim! Às vezes, usar a capacidade total não é o ideal. Pode ser melhor levar itens
+mais leves e valiosos do que encher a mochila com itens pesados e de menor valor.
+💡 O objetivo é maximizar o valor, não preencher a mochila totalmente.
+
+
+🔍 Maior Substring Comum:
+Problema clássico de programação dinâmica:
+- Dadas duas strings, encontrar a maior sequência contínua de caracteres que aparece em ambas.
+📋 A solução usa uma tabela bidimensional, onde:
+- As linhas representam os caracteres da primeira string
+- As colunas, da segunda string
+- Cada célula contém o tamanho da substring comum terminando naquele ponto
+📌 É diferente de subsequência comum (que permite pular caracteres).
