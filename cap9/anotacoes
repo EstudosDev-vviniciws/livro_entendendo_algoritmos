@@ -1,0 +1,70 @@
+🧠 O que é Programação Dinâmica?
+Programação dinâmica é uma técnica usada para resolver problemas complexos,
+dividindo-os em subproblemas menores e resolvendo cada um apenas uma vez, 
+armazenando os resultados (tabela).
+É especialmente útil em problemas de otimização, como encontrar o melhor valor
+possível sob certas restrições.
+
+
+🎒 Problema da Mochila (Knapsack Problem):
+Você tem uma mochila com uma capacidade máxima de peso. Dada uma lista de itens
+com pesos e valores, o objetivo é maximizar o valor total, sem exceder a 
+capacidade da mochila.
+
+
+✏️ Solução Simples (Força Bruta):
+Consiste em testar todas as combinações possíveis de itens, mas isso é muito
+ineficiente para listas grandes (tempo exponencial).
+
+
+✅ Solução com Programação Dinâmica:
+Cria-se uma tabela, onde:
+- Linhas representam os itens.
+- Colunas representam os pesos (capacidades) da mochila.
+
+Cada célula contém o valor máximo que pode ser obtido com os itens disponíveis
+até aquele ponto e o peso correspondente.
+
+
+🎸 Exemplo da Linha do Violão:
+Dado:
+- Violão (peso: 1 kg, valor: 1500)
+- Notebook (peso: 3 kg, valor: 2000)
+- Rádio (peso: 4 kg, valor: 3000)
+
+Capacidade da mochila: 4 kg
+
+A tabela mostra, por exemplo, que:
+- Com o violão (1kg), você pode levar 1500.
+- Com notebook (3kg), pode levar 2000.
+- Mas com rádio (4kg), leva 3000.
+- Com violão + notebook (1+3kg), pode levar 3500.
+
+
+ℹ️ Perguntas Frequentes sobre o Problema da Mochila:
+
+❓ O que acontece se você adicionar um item?
+A tabela ganha mais uma linha. Isso pode gerar um valor total maior, pois o novo
+item pode substituir combinações antigas.
+
+
+❓ E se modificar a ordem das linhas?
+A resposta final não muda, pois a programação dinâmica considera todas as possibilidades
+de combinação. A ordem não afeta o resultado.
+
+
+❓ É possível preencher a tabela pelas colunas (em vez das linhas)?
+Sim, mas o livro usa as linhas para representar os itens por clareza. Tecnicamente,
+o algoritmo funciona nos dois sentidos.
+
+
+❓ O que acontece se você adicionar um item menor?
+Itens mais leves aumentam as possibilidades de combinação. Às vezes, dois itens pequenos
+juntos podem ter mais valor que um grande.
+
+
+❓ Você consegue roubar frações de um item?
+Não, nesse tipo de problema (chamado 0-1 knapsack problem), você não pode dividir os itens.
+Ou você leva o item inteiro, ou não leva.
+Obs: Existe uma variação chamada "knapsack fracionário", onde frações são permitidas — mas
+esse é resolvido com algoritmos gulosos, não programação dinâmica.
