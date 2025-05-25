@@ -1,0 +1,41 @@
+🔍 O que é o algoritmo k-NN?
+- Um algoritmo de classificação baseado em similaridade.
+- Para classificar um item novo, ele procura os k itens mais parecidos
+(vizinhos mais próximos) no conjunto de dados e vota para decidir a classificação.
+- Não há treinamento real: o algoritmo apenas armazena os dados e compara com novos
+casos no momento da previsão.
+
+
+🍊 Classificando Laranjas vs Toranjas:
+- Exemplo usado: frutas com base em características como peso e textura
+(suave ou irregular).
+- Cada fruta é um ponto em um gráfico 2D.
+- Um novo ponto (fruta) é classificado observando os vizinhos mais próximos
+no gráfico.
+- O valor de k define quantos vizinhos considerar (por exemplo, k=3).
+
+
+📽 Criando um Sistema de Recomendações:
+- O k-NN pode ser usado para recomendar filmes, livros, músicas, etc.
+- Em vez de comparar objetos como frutas, compara usuários ou preferências.
+- Exemplo: se usuários A e B assistem filmes semelhantes, as recomendações
+para A podem vir das preferências de B.
+
+
+🧠 Extração de Características:
+- O desempenho do k-NN depende muito das características escolhidas.
+- Características são as informações que você extrai dos dados para comparação
+(ex: altura, peso, gênero, idade).
+- Às vezes, é necessário converter dados complexos (como imagens ou textos) em
+vetores numéricos.
+- A escolha correta de características é essencial para melhorar a precisão.
+
+
+✅ Vantagens do k-NN:
+- Simples de implementar.
+- Funciona bem para conjuntos de dados pequenos e limpos.
+
+⚠️ Desvantagens:
+- Fica lento com conjuntos de dados grandes.
+- Muito sensível a características irrelevantes e ao valor de k.
+- Requer boa normalização dos dados.
