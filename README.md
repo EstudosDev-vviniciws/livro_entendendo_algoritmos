@@ -23,7 +23,7 @@ O livro apresenta os conceitos fundamentais de algoritmos de forma simples e vis
 - [X] Capítulo 7 – Algoritmo de Dijkstra
 - [X] Capítulo 8 - Algoritmos gulosos
 - [X] Capítulo 9 – Programação dinâmica
-- [ ] Capítulo 10 – K-vizinhos mais próximos
+- [X] Capítulo 10 – K-vizinhos mais próximos
 - [ ] Capítulo 11 - Próximos passos
 
 (Atualize conforme for avançando!)
