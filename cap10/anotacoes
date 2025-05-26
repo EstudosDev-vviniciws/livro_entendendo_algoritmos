@@ -39,3 +39,64 @@ vetores numéricos.
 - Fica lento com conjuntos de dados grandes.
 - Muito sensível a características irrelevantes e ao valor de k.
 - Requer boa normalização dos dados.
+
+
+📈 Regressão com k-NN:
+- Enquanto a classificação prediz uma categoria, a regressão prediz um valor
+numérico contínuo.
+- Exemplo: prever o preço de uma casa com base na área, localização, etc.
+- O algoritmo k-NN busca as k casas mais próximas e calcula, por exemplo, a
+média de preços.
+
+
+📐 Similaridade de Cosseno:
+- Técnica para medir similaridade entre vetores.
+- Muito usada em texto, onde cada documento é representado por um vetor de
+palavras (frequências ou pesos).
+- Quanto mais próximo de 1, mais similares os vetores.
+- Exemplo: identificar emails parecidos, documentos similares, etc.
+
+
+🎯 Escolhendo Boas Características:
+- O sucesso do k-NN (e de qualquer algoritmo de ML) depende das características
+escolhidas.
+- Características irrelevantes ou em escalas diferentes podem distorcer os resultados.
+- Exemplo: ao comparar frutas, cor pode ser mais relevante que o número de sementes.
+- Técnicas como normalização, redução de dimensionalidade (PCA) ou engenharia de
+atributos são comuns.
+
+
+🧠 Introdução ao Aprendizado de Máquina:
+O autor introduz o conceito geral de Machine Learning (ML) — ensinar um computador
+a aprender a partir de dados sem ser explicitamente programado.
+
+📷 OCR (Reconhecimento Óptico de Caracteres):
+- O computador aprende a reconhecer letras com base em exemplos rotulados.
+- Cada letra é convertida em uma imagem binária ou matriz de pixels, e isso vira
+um vetor.
+- Com k-NN, compara a nova imagem com as imagens do banco de dados.
+
+📧 Criando um Filtro de Spam:
+- Classifica um email como spam ou não spam com base nas palavras que aparecem.
+- Pode usar frequência de palavras como características.
+- k-NN compara o novo email com emails anteriores classificados.
+
+📊 Prevendo a Bolsa de Valores:
+Usa k-NN para prever tendências de preços, com base em dados passados como:
+- volume de transações
+- preço de abertura/fechamento
+- indicadores técnicos
+Problema mais complexo, pois exige características bem definidas e muitos dados.
+
+
+✅ Conclusão:
+- O k-NN é um algoritmo simples e eficaz para classificação e regressão, baseado na
+comparação com os vizinhos mais próximos.
+- Ele não precisa de treinamento, apenas armazena os dados e os utiliza no momento 
+da previsão.
+- É útil em várias aplicações de aprendizado de máquina, como recomendações, reconhecimento
+de padrões e filtros de spam.
+- Seu desempenho depende da escolha de boas características, da medida de similaridade
+e da normalização dos dados.
+- Apesar de fácil de implementar, exige cuidado com dados irrelevantes ou mal preparados.
+- Serve como excelente introdução aos conceitos fundamentais de machine learning.
