@@ -1,0 +1,58 @@
+🌳 Árvores:
+- Estrutura de dados eficiente para buscas, inserções e remoções.
+- Árvores binárias de busca (BST) mantêm os dados organizados de forma que
+cada nó tenha no máximo dois filhos: um menor e um maior.
+- Usadas em bancos de dados, sistemas de arquivos e organização de informações
+hierárquicas.
+
+
+📚 Índices Invertidos:
+- Estrutura usada por mecanismos de busca.
+- Mapeia palavras-chave para os documentos onde elas aparecem.
+- Permite buscas rápidas por termos, como no Google.
+- Exemplo: a palavra "algoritmo" pode apontar para os documentos 2, 5 e 9.
+
+
+🔄 Transformada de Fourier:
+- Técnica para converter sinais do domínio do tempo para o domínio da frequência.
+- Útil em compressão de áudio e imagem (ex: MP3, JPEG).
+- Permite entender os padrões de frequência em sinais complexos.
+
+
+⚙️ Algoritmos Paralelos e MapReduce:
+Algoritmos paralelos: dividem tarefas em partes menores que podem ser executadas
+simultaneamente por vários processadores.
+
+MapReduce é um modelo de programação usado em computação distribuída.
+- map: aplica uma função a cada item de uma lista.
+- reduce: combina os resultados em um único valor.
+
+Exemplo: contar quantas vezes cada palavra aparece em um conjunto enorme de documentos.
+
+
+🌍 Por que Algoritmos Distribuídos são Úteis?
+- Permitem processar grandes volumes de dados de forma eficiente e escalável.
+- Utilizados em sistemas como Google, Amazon e Facebook.
+- Ajudam a lidar com tarefas que seriam impossíveis de executar em um único computador.
+
+
+🗺️ Função map e Função reduce:
+- map(f, lista): aplica a função f a cada item da lista.
+- reduce(f, lista): combina todos os elementos da lista usando a função f.
+- São essenciais em frameworks como Hadoop e Spark.
+
+
+⚡ Filtros Probabilísticos:
+
+🧪 Filtro de Bloom:
+- Estrutura de dados compacta usada para testar se um item pertence a um conjunto.
+- Usa várias funções hash e uma tabela de bits.
+- Pode dizer que um item está no conjunto mesmo se não estiver (falsos positivos),
+mas nunca erra ao dizer que um item não está.
+- Útil em sistemas que precisam economizar memória, como em caches e filtros de spam.
+
+📏 HyperLogLog:
+- Algoritmo para estimar rapidamente o número de elementos distintos em um conjunto
+(contagem aproximada).
+- Muito mais eficiente que armazenar todos os dados.
+- Usado por empresas para medir visitantes únicos, consultas, etc.
