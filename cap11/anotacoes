@@ -84,3 +84,37 @@ o hash da senha.
 armazenado.
 - Assim, mesmo que o banco de dados seja comprometido, os atacantes não terão
 acesso direto às senhas.
+
+
+🧬 Hash Sensitivo Local:
+- Algoritmo que aproxima itens semelhantes agrupando seus hashes.
+- Ideal para comparar textos, músicas ou imagens com pequenas variações.
+- Exemplo: encontrar imagens quase idênticas em um banco de dados.
+
+
+🔐 Troca de Chaves de Diffie-Hellman:
+- Método criptográfico para dois lados trocarem uma chave secreta sem
+enviá-la diretamente.
+- Baseado em exponenciação modular.
+- Fundamento da criptografia moderna.
+
+
+📊 Programação Linear:
+- Técnica de otimização para problemas com restrições lineares.
+Exemplos:
+- Maximizar lucros com recursos limitados.
+- Minimizar custos respeitando limites de produção.
+Problemas são representados por funções objetivo + restrições.
+
+
+✅ Conclusão:
+- O capítulo destaca algoritmos e estruturas essenciais para sistemas eficientes
+e escaláveis.
+- Árvores, índices invertidos e MapReduce otimizam buscas e processamento de dados
+em larga escala.
+- Filtros probabilísticos e funções hash garantem desempenho e segurança com baixo custo.
+- Técnicas como Fourier, Hash Sensitivo Local e Diffie-Hellman ampliam as aplicações em
+compressão, similaridade e criptografia.
+- A programação linear mostra como resolver problemas reais com restrições.
+- No geral, o conteúdo reforça a importância de algoritmos robustos em contextos 
+modernos e distribuídos.
