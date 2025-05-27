@@ -56,3 +56,31 @@ mas nunca erra ao dizer que um item não está.
 (contagem aproximada).
 - Muito mais eficiente que armazenar todos os dados.
 - Usado por empresas para medir visitantes únicos, consultas, etc.
+
+
+🔐 Algoritmos SHA:
+- Funções hash criptográficas como SHA-1 ou SHA-256 produzem um resumo (hash) 
+fixo a partir de qualquer entrada.
+- Pequenas alterações na entrada geram mudanças grandes e imprevisíveis no hash.
+- São determinísticas: a mesma entrada sempre gera o mesmo hash.
+
+Muito usadas para:
+- Verificar integridade de arquivos.
+- Armazenar senhas de forma segura.
+- Assinar digitalmente mensagens.
+
+
+📁 Comparando Arquivos com Hash:
+- Para saber se dois arquivos são iguais, pode-se calcular o hash de cada um.
+- Se os hashes forem iguais, os arquivos provavelmente são idênticos (embora 
+existam casos raríssimos de colisões).
+- Isso é muito mais rápido do que comparar todos os bytes dos arquivos.
+
+
+🔒 Verificação de Senhas com Hash:
+- Em vez de armazenar senhas em texto puro (inseguro!), os sistemas armazenam
+o hash da senha.
+- Quando o usuário digita a senha, o sistema calcula o hash e compara com o 
+armazenado.
+- Assim, mesmo que o banco de dados seja comprometido, os atacantes não terão
+acesso direto às senhas.
