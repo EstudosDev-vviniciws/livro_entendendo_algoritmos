@@ -1,5 +1,5 @@
 '''
-Próximos Passos - 7. Hash Sensitivo Local (simplificado com MinHash):
+Próximos Passos - 6. Hash Sensitivo Local (simplificado com MinHash):
 Objetivo: Demonstrar como calcular a similaridade entre conjuntos de
 palavras usando o índice de Jaccard, uma técnica básica relacionada
 ao Hash Sensitivo Local (LSH).
