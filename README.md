@@ -24,6 +24,6 @@ O livro apresenta os conceitos fundamentais de algoritmos de forma simples e vis
 - [X] Capítulo 8 - Algoritmos gulosos
 - [X] Capítulo 9 – Programação dinâmica
 - [X] Capítulo 10 – K-vizinhos mais próximos
-- [ ] Capítulo 11 - Próximos passos
+- [X] Capítulo 11 - Próximos passos
 
 (Atualize conforme for avançando!)
