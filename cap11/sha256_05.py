@@ -1,5 +1,5 @@
 '''
-Próximos Passos - 6. Simulação de Armazenamento de Senhas com Hash:
+Próximos Passos - 5. Simulação de Armazenamento de Senhas com Hash:
 Objetivo: Mostrar como armazenar e verificar senhas de forma segura
 usando hash, sem guardar a senha original.
 '''
